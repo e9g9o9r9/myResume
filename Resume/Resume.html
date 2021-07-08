@@ -1,0 +1,107 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<link rel='stylesheet' href='Resume.css' type='text/css'>
+<script src="https://kit.fontawesome.com/61c3361672.js" crossorigin="anonymous"></script>
+<title>Resume Romanchuk</title>
+
+
+</head>
+
+<body>
+<div class='container'>
+	<header class='header'>
+		<div class='Romanch'>Romanchuk. Resume</div>
+	</header>
+</div>
+
+	<div class = 'about-me'>
+		
+			<div class='image'>
+				<img src = 'k9GRz8SUfaM.jpg' alt=''>
+			</div>
+			<div class='information'>
+			<style>
+			.information p {text-indent: 25px;}
+			</style>
+				 Романчук Егор Игоревич, 12.05.2000 (21 год), г. Ростов-на-Дону.
+				<p > На данный момент обучаюсь на 4 курсе технического университета. Ищу работу на позицию младшего Frontend-разработчика. 
+				</p>
+				<p>
+				 Есть опыт создания собственных проектов. Готов постоянно учиться, развиваться и приносить пользу компании. 
+				</p>
+				<p>
+				 Если вас заинтересовала моя кандидатура, буду готов ответить на все ваши вопрсы и при необходимости 
+				 я смогу подъехать к Вам на собеседование, в любое удобное для вас время.
+				</p>
+				
+			</div>
+	</div>
+
+	<div class='me'>
+		<div class='education'>
+			<a  class='educationbtn' onclick="textAddEducation()" onmousedown='showBlock()'>Образование</a>
+			<i class="fas fa-university"></i>
+		</div>
+		<div class='foreign-languages'>		
+			<a class='foreign-languagesbtn'  onclick="textAddLanguages()" onmousedown='showBlock()'>Иностранные языки</a>				
+			<i class="far fa-flag"></i>			
+		</div>
+		<div class='projects'>		
+			<a  class='projectsbtn'  onclick="textAddProjects()" onmousedown='showBlock()'>Проекты</a>			
+			<i class="fab fa-js"></i>			
+		</div>
+		<div class='additional-Information'>		
+			<a  class='additional-Informationbtn'  onclick="textAddInformation()" onmousedown='showBlock()'>Доп. информация</a>			
+			<i class="fas fa-user"></i>			
+		</div>
+			<div id='textAdd'></div>
+		</div>
+	
+<footer class='footer'>
+	<div class = 'phone-icon'>
+		<i class="fas fa-phone"></i>
+		<div class='number'>+79094431523</div>
+	</div>
+	<div class='contacts'>Контакты:</div>
+	
+	<div class='mail-icon'>
+		<i class="fas fa-envelope"></i>
+		<div class='mail'>egor_romanchuk@mail.ru</div>
+	</div>	
+</footer>
+
+<script type='text/javascript'>
+	let textAddEducation = () => {
+		let textA = document.getElementById('textAdd');
+		textA.innerHTML = 'На данный момент обучаюсь на 4 курсе Донского Государственного Технического Университета' 
+		textA.innerHTML += ' по специальности "Эксплуатация транспортно-технологических машин и коплексов"'
+	}
+
+	let textAddLanguages = () => {
+		let textL = document.getElementById('textAdd');
+		textL.innerHTML = '- Английский язык - B1'
+		textL.innerHTML += '<p>- Испанский язык - A1</p>'
+	}
+
+	let textAddProjects = () => {
+		let textP = document.getElementById('textAdd');
+		textP.innerHTML = '- Сайт резюме (HTML, CSS) '
+		textP.innerHTML += '<p>- Игра (JS)</p>'
+		textP.innerHTML += '<p>- социальная сеть (React, Redux)</p>'
+	}
+
+	let textAddInformation = () => {
+		let textI = document.getElementById('textAdd');
+		textI.innerHTML = '- Семейное положение: не женат.'
+		textI.innerHTML += '<p>- Возможность командировок: да. </p>'
+		textI.innerHTML += '<p>- Водительское удостоверение: есть.</p>'
+		textI.innerHTML += '<p>- Личные качества: Работоспособность, целеустремленность, стрессоустойчивость, дисциплинированность.</p>'
+	}
+
+	let showBlock = () => {
+		document.getElementById('textAdd').style.display = 'block'
+	}
+</script>
+</body>
+</html>

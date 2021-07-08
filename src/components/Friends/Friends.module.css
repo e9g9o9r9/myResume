@@ -1,0 +1,33 @@
+.Images {
+    margin-bottom: 50px;
+    display: inline;
+}
+
+.Images .Images1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin-right: 5px;
+
+
+}
+
+.Images .Images2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin-right: 5px;
+
+}
+
+.Images .Images3 {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin-right: 5px;
+
+}
+
+.Friends {
+    margin-top: 100px;
+}
